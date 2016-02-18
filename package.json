@@ -3,7 +3,14 @@
   "name": "github-release-sandbox",
   "version": "0.1.0",
   "devDependencies": {
-    "conventional-github-releaser": "^1.1.0",
-    "gulp": "^3.9.1"
+    "config": "^1.19.0",
+    "git-remote-origin-url": "^2.0.0",
+    "github4": "^0.5.3",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-util": "^3.0.7",
+    "hosted-git-info": "^2.1.4",
+    "pify": "^2.3.0",
+    "run-sequence": "^1.1.5"
   }
 }
