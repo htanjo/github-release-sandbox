@@ -8,11 +8,12 @@ var GitHubApi = require('github4');
 var gitRemoteOriginUrl = require('git-remote-origin-url');
 var hostedGitInfo = require('hosted-git-info');
 var pify = require('pify');
+var fs = require('fs');
 
 var github = new GitHubApi();
 github.authenticate(config.auth);
 
-var pkg = require('./package.json');
+var pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 var releaseData = {
   packageName: pkg.name,
   tag: 'v' + pkg.version
